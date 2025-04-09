@@ -1,0 +1,64 @@
+ /* Navbar shadow and padding */
+ .navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1.5rem;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
+
+/* Center the navbar menu */
+.navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Nav links: spacing, font-weight, and transitions */
+.navbar-nav .nav-link {
+  margin: 0 1rem;
+  font-weight: 600;
+  color: #ffffff !important;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Active nav link */
+.navbar-nav .nav-item.active .nav-link {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: 700;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-item {
+  font-weight: 500;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Optional dropdown animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
